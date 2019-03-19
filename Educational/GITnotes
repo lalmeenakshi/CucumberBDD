@@ -1,0 +1,11 @@
+GIT is a tool and GIT hub is hosting server
+Source Control Management (SCM)- example are GIT,SVN,TFS,VSTS
+Services provided by GIT hub- wiki,Task management, Bug tracking,hosting services for GIT repository 
+Steps to push code-
+1. Git initialization
+2.Git add remote origin <url>
+3.Git status
+4.Git add .
+5.Git status
+6.Git commit-m "test"
+7.Git push origin master 

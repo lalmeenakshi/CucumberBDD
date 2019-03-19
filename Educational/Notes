@@ -1,0 +1,26 @@
+It is used to write User acceptance test for web application.
+It used to test the system rather than particular piece of code.
+Cucumber is a java framework and Ruby
+Gherkin language is use . Its a high level language using Given/When/Then.
+Feature----->scenario---->number of steps.
+consist of 3 components- features files,step definition and TestRunner
+Feature file - contain Gherkins keywords - Given,When,Then,And,As *,But. These keyword is used to define scenario.
+ Step Definition - Selenium + java + Annotation.
+ TestRunner - Junit. To run feature.To generate output/report.
+ cucumber options : dryRun,features,glue,tags,monochrome,format,strict .options are defined in runner class but tags is defined in feature files.
+ dryRun: It used to do mapping between the feature file and stepdefinition. dryRun= true. Its will check if both are mapped or not but will not
+ execute the test. To execute test dryRun= false
+ Monochrome: display the output in a readable format.
+ Different reports we can generate- html,json,junit. junit is preferred one.
+ Strict - It will check if any step is not defined in stepdefinition file.
+ For data driven approach , use regular expression.(without example keyword).
+ In test data driven , headers are not provided only columns values are provided
+ DataTable with Maps is used for paramation of test case
+ Tagging- tagged inb feature files.
+OR tags= {"@smoketest , @Regressiontest}
+AND tags={"@smoketest" ,"@Regressiontest"}
+Ignore tags={"~@Smoketest"}
+Hooks used to defined precondition,postconditions(@After,@Before,excel sheet)
+Global hooks - pre and post conditions for every scenario.
+local hooks(tagged hooks)- pre or post comditions for particular scenario
+for global hooks ordering can be done.@After(order=0),@Before(order=1) 
